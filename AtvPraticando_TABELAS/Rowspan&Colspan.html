@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 2 - Tabelas com colspan e rowspan</title>
+    <link rel="icon" type="image/svg+xml" href="icons/favicon-tabela.svg">
+    <style>
+        table,
+        td {
+            border: 1px solid red;
+        }
+
+        td {
+            padding: 30px 60px;
+            text-align: center;
+        }
+
+        table {
+            margin-bottom: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Página 2 - Tabelas com colspan e rowspan</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Tabela com colspan</h2>
+            <table>
+                <tr>
+                    <td colspan="3">Colspan</td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Tabela com rowspan</h2>
+            <table>
+                <tr>
+                    <td>-</td>
+                    <td rowspan="3">Rowspan</td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Tabela com colspan e rowspan</h2>
+            <table>
+                <tr>
+                    <td colspan="2">Colspan</td>
+                    <td>-</td>
+                    <td rowspan="3">Rowspan</td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td colspan="2">Colspan</td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+            </table>
+        </section>
+
+        <p><a href="principal.html">Voltar ao menu principal</a></p>
+    </main>
+</body>
+
+</html>
