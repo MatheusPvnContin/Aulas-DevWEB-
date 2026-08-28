@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro CSS com tabela</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #91d0e4;
+        }
+
+        .tabelaP table,
+        .tabelaP td {
+            border: 1px solid red;
+            border-collapse: collapse;
+            
+        }
+
+        .tabelaP {
+            margin-bottom: 25px;
+        }
+
+        .tabelaP td {
+            padding: 30px 60px;
+            text-align: center;
+
+        }
+
+        .TabelaLegenda td{
+            border: red solid 1px;
+            padding: 3px 6px;
+            text-align: center;
+        }
+       
+
+        .tdBranco{
+            background-color: white;
+        }
+
+        .linha1{
+            background-color: green;  
+        }
+
+        .linha2{
+            background-color: red; 
+        }
+
+        .linha3{
+            background-color: blue; 
+        }
+
+        .linha4{
+            background-color: yellow; 
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Praticando 2 - Tabela Grande com rowspan e colspan colorida em CSS</h1>    
+    </header>
+
+    <main>
+        <section class="tabelaP">
+                <table>
+                    <tbody>
+                        <caption>  Tabela grande com colspan e rowspan</caption>
+                        <tr>
+                            <td colspan="2" class="linha1">Colspan</td>
+                            <td class="linha1">-</td>
+                            <td rowspan="3" class="linha1">Rowspan</td>
+                        </tr>
+                        <tr>
+                            <td class="linha2">-</td>
+                            <td class="linha2">-</td>
+                            <td class="linha2">-</td>
+                        </tr>
+                        <tr>
+                            <td class="linha3">-</td>
+                            <td colspan="2" class="linha3">Colspan</td>
+                        </tr>
+                        <tr>
+                            <td class="linha4">-</td>
+                            <td class="linha4">-</td>
+                            <td class="linha4">-</td>
+                            <td class="linha4">-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        <section class="TabelaLegenda">
+        <table >
+                <tbody>
+                    <caption>Legenda</caption>
+                    <tr>
+                        <td class="tdBranco">Linha 1</td>
+                        <td class="linha1">-----</td>
+                        <td class="tdBranco">green</td>
+                    </tr>
+                    <tr>
+                        <td class="tdBranco">Linha 2</td>
+                        <td class="linha2">----</td>
+                        <td class="tdBranco">red</td>
+                    </tr>
+                    <tr>
+                        <td class="tdBranco">Linha 3</td>
+                        <td class="linha3">----</td>
+                        <td class="tdBranco">blue</td>
+                    </tr>
+                    <tr>
+                        <td class="tdBranco">Linha 4</td>
+                        <td class="linha4">----</td>
+                        <td class="tdBranco">yellow</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
