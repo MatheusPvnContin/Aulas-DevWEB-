@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Praticando 1 - Cores e background-colors</title>
+
+    <link rel="stylesheet" href="EstiloPratic1.css" />
+    
+</head>
+
+<body class = "fundoPag">
+    <!--
+        PRATICANDO 1 - Cores e background-colors
+        =========================================
+
+        1. Utilize CSS EXTERNO
+           NÃO é permitido usar CSS inline! Você deverá mostrar o código
+           fonte na validação da atividade.
+
+        2. Para cada seção (vermelho, verde, azul, amarelo, laranja)
+           escolha um tom claro e um escuro
+             - a cor de fundo da seção deverá ser o tom claro (background-color);
+             - a cor da borda e da fonte deverá ser o tom mais escuro.
+
+        3. Os trechos de texto marcados com <span> devem ficar em uma
+           cor diferente do restante do parágrafo.
+
+        4. O menu de navegação deve funcionar como âncoras: cada link
+           precisa levar até a seção correspondente da página.
+
+        Chame o professor quando terminar para mostrar o resultado.
+    -->
+
+    <header>
+        <h1>Praticando 1 - Cores e <i>background-colors</i></h1>
+    </header>
+
+    <nav class="fundo-cinza">
+        <h3>Menu para navegação</h3>
+        <ul>
+            <li>
+                <a href="#BVermelho">Bloco <span class="vermelha">vermelho</span></a>
+            </li>
+            <li>
+                <a href="#BVerde">Bloco <span class="verde">verde</span></a>
+            </li>
+            <li>
+                <a href="#BAzul">Bloco <span class="azul">azul</span></a>
+            </li>
+            <li>
+                <a href="#BAmarelo">Bloco <span class="amarelo">amarelo</span></a>
+            </li>
+            <li>
+                <a href="#BLaranja">Bloco <span class="laranja">laranja</span></a>
+            </li>
+        </ul>
+        <br>
+    </nav>
+
+    <main class="fundo-cinza">
+        <h2>Este é o bloco principal da página</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem modi
+            assumenda necessitatibus consequatur cum ipsum pariatur at? Ducimus
+            hic explicabo tenetur deleniti debitis aut deserunt consequuntur
+            animi! Laborum, minima odio! Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Iure, maxime nostrum culpa debitis laudantium
+            facere, unde suscipit minus officiis omnis molestias ullam corporis
+            quae minima incidunt perferendis ipsum qui alias?
+        </p>
+
+        <section id="BVermelho" class="caixaVermelho">
+            <h4>Bloco <span class="vermelha">vermelho</span></h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="vermelha">Quidem modi
+                    assumenda necessitatibus consequatur cum ipsum pariatur at? Ducimus
+                    hic explicabo tenetur deleniti debitis aut deserunt consequuntur
+                    animi! </span>Laborum, minima odio! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Iure, maxime nostrum culpa debitis
+                laudantium facere, unde suscipit minus
+                officiis omnis molestias ullam corporis quae minima incidunt
+                perferendis ipsum qui alias?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem modi
+                assumenda necessitatibus consequatur cum ipsum pariatur at? Ducimus
+                hic <span class="vermelha">explicabo tenetur deleniti debitis aut
+                    deserunt consequuntur animi! Laborum, minima odio! Lorem ipsum dolor
+                    sit amet consectetur adipisicing elit. </span>Iure, maxime nostrum culpa
+                debitis laudantium facere, unde suscipit minus officiis omnis
+                molestias ullam corporis quae minima incidunt perferendis ipsum qui
+                alias?
+            </p>
+        </section>
+        <br>
+
+        <section id="BVerde" class="caixaVerde">
+            <h4>Bloco <span class="verde">verde</span></h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem modi
+                assumenda necessitatibus consequatur cum ipsum pariatur at? Ducimus
+                hic explicabo tenetur deleniti debitis aut deserunt consequuntur
+                animi! Laborum, minima odio! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Iure, maxime nostrum culpa debitis
+                <span class="verde">laudantium facere, unde suscipit minus
+                    officiis omnis molestias ullam corporis quae minima incidunt
+                    perferendis ipsum qui alias?</span>
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem modi
+                assumenda necessitatibus consequatur cum ipsum pariatur at? Ducimus
+                hic <span class="verde">explicabo tenetur deleniti</span> debitis aut
+                deserunt consequuntur animi! Laborum, minima odio! Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Iure, maxime nostrum culpa
+                debitis laudantium facere, unde suscipit minus officiis omnis
+                molestias ullam corporis quae minima incidunt perferendis ipsum qui
+                alias?
+            </p>
+        </section>
+        <br>
+
+        <section id="BAzul" class="caixaAzul">
+            <h4>Bloco <span class="azul">azul</span></h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem modi
+                assumenda necessitatibus consequatur cum ipsum pariatur at? Ducimus
+                <span class="azul">hic explicabo tenetur deleniti debitis aut deserunt consequuntur
+                animi! Laborum, minima odio! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Iure, maxime nostrum culpa debitis
+                laudantium facere</span>, unde suscipit minus
+                officiis omnis molestias ullam corporis quae minima incidunt
+                perferendis ipsum qui alias?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem modi
+                assumenda necessitatibus consequatur cum ipsum pariatur at? Ducimus
+                hic <span class="azul">explicabo tenetur deleniti debitis aut
+                deserunt consequuntur animi! Laborum, minima odio! Lorem ipsum dolor</span>
+                sit amet consectetur adipisicing elit. Iure, maxime nostrum culpa
+                debitis laudantium facere, unde suscipit minus officiis omnis
+                molestias ullam corporis quae minima incidunt perferendis ipsum qui
+                alias?
+            </p>
+        </section>
+        <br>
+
+        <section id="BAmarelo" class="caixaAmarelo">
+            <h4>Bloco <span class="amarelo">amarelo</span></h4>
+            <p>
+                <span class="amarelo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem modi
+                assumenda necessitatibus consequatur cum ipsum pariatur at? Ducimus
+                hic explicabo tenetur deleniti debitis aut deserunt consequuntur</span>
+                animi! Laborum, minima odio! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Iure, maxime nostrum culpa debitis
+                laudantium facere, unde suscipit minus
+                officiis omnis molestias ullam corporis quae minima incidunt
+                perferendis ipsum qui alias?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem modi
+                assumenda necessitatibus consequatur cum ipsum pariatur at? Ducimus
+                hic <span class="amarelo">explicabo tenetur deleniti debitis aut
+                deserunt consequuntur animi! Laborum, minima odio! Lorem ipsum dolor
+                sit amet consectetur adipisicing elit.</span> Iure, maxime nostrum culpa
+                debitis laudantium facere, unde suscipit minus officiis omnis
+                molestias ullam corporis quae minima incidunt perferendis ipsum qui
+                alias?
+            </p>
+        </section>
+        <br>
+
+        <section id="BLaranja" class="caixaLaranja">
+            <h4>Bloco <span class="laranja">laranja</span></h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem modi
+                assumenda necessitatibus consequatur cum ipsum pariatur at? Ducimus
+                hic explicabo tenetur deleniti debitis aut deserunt consequuntur
+                animi! Laborum, minima odio! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Iure, maxime nostrum culpa debitis
+                <span class="laranja">laudantium facere, unde suscipit minus
+                officiis omnis molestias ullam corporis quae minima incidunt</span>
+                perferendis ipsum qui alias?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet <span class="laranja">consectetur adipisicing elit. Quidem modi
+                assumenda necessitatibus consequatur cum ipsum pariatur at? Ducimus
+                hic explicabo tenetur deleniti</span> debitis aut
+                deserunt consequuntur animi! Laborum, minima odio! Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Iure, maxime nostrum culpa
+                debitis laudantium facere, unde suscipit minus officiis omnis
+                molestias ullam corporis quae minima incidunt perferendis ipsum qui
+                alias?
+            </p>
+        </section>
+        <br>
+    </main>
+</body>
+
+</html>

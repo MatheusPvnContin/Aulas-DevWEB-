@@ -1,0 +1,56 @@
+  .azul   { background-color: blue; }
+  .verde  { background-color: green; }
+  .vermelha { background-color: red; }
+  .laranja { background-color: orange; }
+  .amarelo { background-color: yellow; }
+
+  .fundo-cinza{
+    background-color: #8d8181;
+  }
+
+  .fundoPag{
+    background-color: #cfb6b6;
+  }
+
+ 
+  .letraVermelho{
+    color: rgb(212, 60, 0);
+  }
+  .caixaVermelho{
+    background-color: #f7b2a6;
+    border: 5px solid rgb(202, 12, 12);
+    padding: 5px 10px;
+    margin: 0px 0;
+    color: rgb(192, 48, 23);
+  }
+
+  .caixaVerde{
+    background-color: #b2f7a6;
+    border: 5px solid rgb(0, 78, 0);
+    padding: 5px 10px;
+    margin: 0px 0;
+    color: rgb(23, 192, 48);
+  }
+  .caixaAzul{
+    background-color: #a6c2f7;
+    border: 5px solid rgb(0, 0, 78);
+    padding: 5px 10px;
+    margin: 0px 0;
+    color: rgb(23, 48, 192);
+  }
+
+  .caixaAmarelo{
+    background-color: #f7f1a6;
+    border: 5px solid rgb(192, 192, 23);
+    padding: 5px 10px;
+    margin: 0px 0;
+    color: rgb(192, 192, 23);
+  }
+
+  .caixaLaranja{
+    background-color: #f7d9a6;
+    border: 5px solid rgb(192, 96, 23);
+    padding: 5px 10px;
+    margin: 0px 0;
+    color: rgb(192, 96, 23);
+  }
