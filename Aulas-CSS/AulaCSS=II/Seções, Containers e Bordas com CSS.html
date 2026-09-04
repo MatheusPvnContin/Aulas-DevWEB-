@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Praticando 3 - Seções, Containers e Bordas com CSS</title>
+<style>
+  body {
+    font-family: Georgia, "Times New Roman", serif;
+    margin: 0;
+    color: #1a1a1a;
+  }
+
+  header, footer {
+    padding: 12px 20px;
+
+  }
+
+  header {
+    background-color: #aad4e0;
+  }
+
+  header h1 {
+    margin: 0 0 6px 0;
+    font-size: 1.6em;
+  }
+
+  footer {
+    background-color: #d9d9d9;
+    font-size: 0.9em;
+  }
+
+  section {
+    background-color: #eafaf1;
+    padding: 16px 20px;
+  }
+
+  section h2 {
+    margin-top: 0;
+  }
+
+  .azul   { color: blue; }
+  .verde  { color: green; }
+  .vermelha { color: red; }
+
+  .caixa-amarela {
+    background-color: #ffff00;
+    border: 2px solid red;
+    padding: 5px 10px;
+    margin: 0px 0;
+  }
+
+  .caixa-azul {
+    background-color: #add8e6;
+    border: 2px solid red;
+    padding: 5px 10px;
+    margin: 0px 0;
+  }
+
+  /* code {
+    background-color: #e6e6e6;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-family: "Courier New", monospace; 
+  } */  /*CASO QUEIRA USAR O CODE ESTILIZADO COM CSS*/
+
+  .caixa-inline {
+    background-color: #e6f0fb;
+    border: 3px solid blue;
+    padding: 12px;
+    margin: 14px 0;
+  }
+
+  .caixa-inline span {
+    display: inline-block;
+    border: 1px solid #333;
+    padding: 2px 8px;
+    margin-right: 6px;
+    background-color: #fff;
+  }
+
+  .caixa-inline .destaque { /* classe para destacar um elemento, preenchendo completamente a cor destaque */
+    background-color: yellow;
+  }
+
+  .caixa-inline p {
+    margin-top: 10px;
+  }
+
+  .caixa-block {
+    background-color: #fdecd8;
+    border: 3px solid #b5651d;
+    padding: 12px;
+    margin: 14px 0;
+  }
+
+  .item-block {
+    background-color: #ffffff;
+    border: 1px solid #b5651d;
+    padding: 6px 10px;
+    margin: 6px 0;
+  }
+
+  blockquote {
+    background-color: #ffffff;
+    border: 1px solid #b5651d;
+    margin: 6px 0 6px 40px;
+    padding: 6px 10px;
+  }
+
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Praticando 3 - Seções, Containers e Bordas com CSS</h1>
+  <p>Este é um exemplo de cabeçalho feito com &lt;header&gt;.</p>
+</header>
+
+<section>
+  <h2>Seção 1</h2>
+  <p>Este é um exemplo de texto com uma palavra <span class="azul">azul</span>, uma palavra <span class="verde">verde</span> e uma palavra <span class="vermelha">vermelha</span>.</p>
+
+  <div class="caixa-amarela">Caixa feita com DIV dentro da seção.</div>
+
+  <div class="caixa-azul">
+    <p>Segundo a &ldquo;História da Web&rdquo;, a primeira página HTML foi publicada em 1991 — mais de 30 anos atrás. Hoje, a linguagem é usada em <strong>bilhões</strong> de páginas ao redor do mundo.</p>
+    <p>Curiosidade: o símbolo de grau (&deg;) e o de multiplicação (&times;) também são entidades, como em 25&deg;C ou 3 &times; 4.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Seção 2</h2>
+  <p>Este é outro exemplo de texto, agora há mais palavras em <span class="verde">verde</span>, algumas em <span class="azul">azul</span> e só uma em <span class="vermelha">vermelha</span>.</p>
+
+  <div class="caixa-azul">
+    <p>Todo rodapé de site sério tem um símbolo de copyright (&copy;) e, às vezes, até de marca registrada (&reg;) ou marca comercial (&trade;). Setas também são comuns em menus: &larr; voltar &rarr; avançar.</p>
+    <p>E frações? &frac12; xícara de açúcar, &frac14; de hora — tudo isso são entidades HTML!</p>
+  </div>
+</section>
+
+<section>
+  <h2>Seção 3 — Por que entidades existem de verdade</h2>
+  <p>Além dos símbolos "bonitinhos", entidades resolvem um problema real: como mostrar um sinal de menor (<code>&amp;lt;</code>) ou maior (<code>&amp;gt;</code>) na tela sem o navegador achar que é o início de uma tag?</p>
+ 
+  <div class="caixa-amarela">
+    <p>Se eu quiser que a tag <code>&lt;p&gt;</code> apareça como texto normal (sem virar um parágrafo de verdade), preciso escrever <code>&amp;lt;p&amp;gt;</code> no código-fonte.</p>
+    <p>O mesmo vale para o "E comercial" (&amp;): quando eu quero mostrá-lo literalmente, preciso escrever <code>&amp;amp;</code>.</p>
+    <p><em>(Nota: repare que aqui a tag <code>&lt;code&gt;</code> foi usada porque ela indica que aquele trecho é código — e o navegador já mostra esse texto com uma fonte diferente por padrão, sem eu precisar definir nada com CSS.)</em></p>
+  </div>
+</section>
+
+<section>
+  <h2>Elementos Inline vs. Block</h2>
+  <p>Alguns elementos HTML ficam <strong>na mesma linha</strong> que o conteúdo ao redor (inline); outros sempre <strong>começam em uma linha nova</strong> (block). Compare:</p>
+
+  <div class="caixa-inline">
+    <h3>Inline</h3>
+    <span><a href="#">&lt;a&gt;</a></span>
+    <span><strong>&lt;strong&gt;</strong></span>
+    <span><em>&lt;em&gt;</em></span>
+    <span class="destaque"><mark>&lt;mark&gt;</mark></span>
+    <span><code>&lt;code&gt;</code></span>
+    <span>H<sub>2</sub>O (&lt;sub&gt;)</span>
+    <span>m<sup>2</sup> (&lt;sup&gt;)</span>
+    <p><em>Repare: todos os exemplos acima ficam lado a lado, na mesma linha.</em></p>
+  </div>
+
+    <div class="caixa-block">
+    <h3>Block</h3>
+    <div class="item-block">&lt;div&gt; — um container genérico.</div>
+    <p class="item-block">&lt;p&gt; — um parágrafo.</p>
+    <div class="item-block">
+      &lt;h1&gt; a &lt;h6&gt; — títulos.
+    </div>
+    <blockquote>&lt;blockquote&gt; — uma citação.</blockquote>
+    <div class="item-block">&lt;section&gt; — uma seção (como esta própria página usa!)</div>
+    <p><em>Repare: cada exemplo acima começa em uma linha própria, mesmo sendo um texto curto.</em></p>
+  </div>
+</section>
+
+
+
+<footer>
+ <p>Este é um exemplo de rodapé feito com &lt;footer&gt;.</p>
+  &copy; 2026 IFSP Votuporanga — Desenvolvimento Web 1
+</footer>
+
+</body>
+</html>

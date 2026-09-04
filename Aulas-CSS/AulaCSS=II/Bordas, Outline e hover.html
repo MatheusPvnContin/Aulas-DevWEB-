@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Praticando 4 - Bordas, Outline e :hover</title>
+<style>
+  body {
+    font-family: Georgia, "Times New Roman", serif;
+    margin: 0;
+    color: #1a1a1a;
+  }
+
+  header {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 14px 20px;
+  }
+
+  header h1 {
+    margin: 0 0 8px 0;
+    font-size: 1.6em;
+  }
+
+  header code {
+    background-color: #333;
+    color: #fff;
+    padding: 1px 5px;
+  }
+
+  .barra-verde {
+    height: 15px;
+    background-color: darkgreen;
+    margin-bottom: 20px;
+  }
+
+  .animal {
+    padding: 16px 20px;
+    margin: 0 20px 24px 20px;
+    border: 4px solid;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+  }
+
+  .animal h2 {
+    margin-top: 0;
+  }
+
+  .animal img {
+    width: 260px;
+    display: block;
+    border: 6px dotted;
+    margin: 12px 0;
+  }
+
+  .legenda {
+    font-style: italic;
+    color: #666;
+  }
+
+  
+  .tartaruga {
+    background-color: #d9fbfb;
+    border-color: teal;
+  }
+  .tartaruga img { border-color: teal; }
+
+ 
+  .onca {
+    background-color: #fdecd8;
+    border-color: #7a4a1e;
+  }
+  .onca img { border-color: #7a4a1e; }
+
+  .mico {
+    background-color: #ccf7c2;
+    border-color: darkgreen;
+  }
+  .mico img { border-color: darkgreen; }
+
+  /* Efeito hover: destaque com fundo e contorno diferentes */
+  .animal:hover {
+    background-color: #f0a3f0;
+    border-color: deeppink;
+    border-style: dashed;
+    outline: 3px dotted deeppink;
+    outline-offset: -3px;
+  }
+
+  footer {
+    background-color: #d9d9d9;
+    padding: 10px 20px;
+    font-size: 0.9em;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Praticando 4 - Bordas, Outline e <em>:hover</em></h1>
+  <p>Passe o mouse sobre cada caixa para ver o efeito de <code>:hover</code>.</p>
+</header>
+<div class="barra-verde"></div>
+
+<section class="animal tartaruga">
+  <h2>Tartaruga marinha (<em>Cheloniidae</em>)</h2>
+  <p>Tartaruga-marinha (<em>Cheloniidae</em>) é a família da ordem das tartarugas que inclui as espécies que habitam mares tropicais e subtropicais em todo o mundo. O grupo é constituído por seis gêneros e sete espécies, todas elas ameaçadas de extinção.</p>
+  <img src="/Aulas-CSS/AulaCSS=II/imagens/Tartaruga-marinha.jpg" alt="Tartaruga marinha nadando">
+  <p class="legenda">Legenda: Tartaruga marinha (Cheloniidae)</p>
+  <p>A sobrevivência das tartarugas-marinhas continua em risco devido a muitos anos de caça intensiva pela sua carapaça, carne (utilizada para sopa) e gordura. Atualmente a caça está controlada, mas estes animais continuam ameaçados pelas redes de pesca que matam cerca de 40&nbsp;000 exemplares por ano. Outra das maiores ameaças é o desenvolvimento costeiro nas áreas de nidificação, que impede as fêmeas de pôr os ovos e impossibilita a sua reprodução.</p>
+  <p>A maioria das espécies são migratórias e vagueiam pelos oceanos, orientando-se com a ajuda do campo magnético terrestre.</p>
+</section>
+
+<section class="animal onca">
+  <h2>Onça-pintada (<em>Panthera onca</em>)</h2>
+  <p>A onça-pintada (<em>Panthera onca</em>) é o maior felino das Américas e o terceiro maior do mundo, atrás apenas do leão e do tigre. Vive em florestas, pantanais e cerrados, do México até o norte da Argentina.</p>
+  <img src="/Aulas-CSS/AulaCSS=II/imagens/Onca-pintada.jpg" alt="Onça-pintada deitada">
+  <p class="legenda">Legenda: Onça-pintada (Panthera onca)</p>
+  <p>É um predador de topo de cadeia alimentar: caça desde capivaras e veados até jacarés, usando uma mordida extremamente forte, capaz de perfurar o crânio de suas presas.</p>
+  <p>Está classificada como espécie quase ameaçada, principalmente por causa da destruição de seu habitat natural e de conflitos com produtores rurais.</p>
+</section>
+
+<section class="animal mico">
+  <h2>Mico-leão-dourado (<em>Leontopithecus rosalia</em>)</h2>
+  <p>O mico-leão-dourado (<em>Leontopithecus rosalia</em>) é um pequeno primata encontrado apenas na Mata Atlântica do Rio de Janeiro, reconhecido pela pelagem alaranjada e brilhante que lembra a juba de um leão.</p>
+  <img src="/Aulas-CSS/AulaCSS=II/imagens/Mico-leao-dourado.jpg" alt="Mico-leão-dourado em um galho" style="width:260px;height:auto;">
+  <p class="legenda">Legenda: Mico-leão-dourado (Leontopithecus rosalia)</p>
+  <p>Vive em pequenos grupos familiares e se alimenta principalmente de frutas, insetos e pequenos vertebrados.</p>
+  <p>Foi um dos primeiros símbolos de conservação da fauna brasileira: chegou a ter menos de 200 indivíduos na natureza na década de 1970, e hoje é considerado um símbolo de sucesso em programas de reintrodução.</p>
+</section>
+
+<footer>
+  &copy; 2026 IFSP Votuporanga — Desenvolvimento Web 1
+</footer>
+
+</body>
+</html>
