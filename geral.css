@@ -1,0 +1,180 @@
+/* ==========================================================================
+   geral.css — folha de estilo COMPARTILHADA entre as 5 páginas do site.
+   Cuida de: fonte, paleta de cores, plano de fundo, cabeçalho, menu de
+   navegação, botão "voltar ao topo" e rodapé.
+   ========================================================================== */
+
+:root {
+    --azul-escuro: #0a1930;   /* cor base 1: fundo geral do site */
+    --azul-medio: #142a4a;    /* cor base 2: cabeçalho, menu, rodapé, cards */
+    --texto-claro: #e8eef5;   /* cor base 3: texto principal sobre fundo escuro */
+    --ciano: #4fd1e8;         /* títulos, links, bordas de destaque */
+    --laranja: #ff8c42;       /* cor de destaque: hover, botão, marcações */
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+    background-color: var(--azul-escuro);
+    color: var(--texto-claro);
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--ciano);
+}
+
+/* todo link do site usa ciano, com laranja no hover */
+a {
+    color: var(--ciano);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--laranja);
+    text-decoration: underline;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid var(--ciano);
+    margin: 20px 0;
+}
+
+/* --------------------------------------------------------------------
+   Cabeçalho
+   -------------------------------------------------------------------- */
+header {
+    background-color: var(--azul-medio);
+    padding: 24px 20px;
+    text-align: center;
+    border-bottom: 3px solid var(--ciano);
+}
+
+header h1 {
+    margin: 0 0 6px 0;
+    font-size: 2rem;
+}
+
+header p {
+    margin: 0;
+    color: var(--texto-claro);
+}
+
+/* --------------------------------------------------------------------
+   Menu de navegação (presente nas 5 páginas)
+   -------------------------------------------------------------------- */
+nav {
+    background-color: var(--azul-medio);
+    padding: 12px 20px;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+    margin: 8px 0 0 0;
+}
+
+/* Seletor de CLASSE: aplicado a cada item de link do menu */
+nav ul li a {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 6px;
+    color: var(--texto-claro);
+    background-color: var(--azul-escuro);
+    border: 1px solid var(--ciano);
+}
+
+/* :hover funcional do menu — muda fundo e cor do texto */
+nav ul li a:hover {
+    background-color: var(--laranja);
+    color: var(--azul-escuro);
+    border-color: var(--laranja);
+    text-decoration: none;
+}
+
+/* --------------------------------------------------------------------
+   Conteúdo: seções, figuras e espaçamento 
+   -------------------------------------------------------------------- */
+main,
+section {
+    padding: 16px 20px;
+    margin: 0 auto 20px auto;
+    max-width: 900px;
+}
+
+figure {
+    margin: 16px 0;
+    padding: 10px;
+    background-color: var(--azul-medio);
+    border-radius: 8px;
+    display: inline-block;
+}
+
+figcaption {
+    margin-top: 6px;
+    font-size: 0.9rem;
+    color: var(--ciano);
+}
+
+img {
+    border-radius: 6px;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.voltar-topo {
+    display: inline-block;
+    margin: 10px 0 20px 0;
+    padding: 8px 16px;
+    background-color: var(--ciano);
+    color: var(--azul-escuro);
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.voltar-topo:hover {
+    background-color: var(--laranja);
+    color: var(--azul-escuro);
+    text-decoration: none;
+}
+
+/*  ajuste do ponto de rolagem do ancora #topo, para não colar no topo da tela */
+#topo {
+    scroll-margin-top: 10px;
+}
+
+.destaque {
+    background-color: var(--laranja);
+    color: var(--azul-escuro);
+    padding: 0 4px;
+    border-radius: 3px;
+}
+
+.destaque-borda {
+    border-bottom: 2px solid var(--laranja);
+}
+
+/* --------------------------------------------------------------------
+   Rodapé
+   -------------------------------------------------------------------- */
+footer {
+    background-color: var(--azul-medio);
+    padding: 16px 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    border-top: 3px solid var(--ciano);
+}
+
+footer img {
+    vertical-align: middle;
+    margin-left: 6px;
+}

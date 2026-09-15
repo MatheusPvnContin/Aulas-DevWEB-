@@ -1,0 +1,67 @@
+/* filmes.css — específico da página "Filmes Favoritos" (página temática) */
+
+/* Grade de cards: cada filme numa "caixa" do mesmo tamanho, se
+   reorganizando conforme a largura da tela */
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+    align-items: start;
+}
+
+/* Cada seção de filme vira um card, com espaçamento de propósito */
+.filme,
+section[id="reflexao"] {
+    background-color: var(--azul-medio);
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Moldura do pôster: mesma altura e recorte para todos*/
+.poster {
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.poster img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    border: 2px solid var(--ciano);
+    border-radius: 8px;
+}
+
+.filme h2 {
+    margin: 0 0 8px 0;
+}
+
+.filme p {
+    flex-grow: 1;
+}
+
+.filme .voltar-topo {
+    align-self: flex-start;
+}
+
+
+nav + section ul {
+    padding-left: 20px;
+}
+
+/* Bloco de reflexão final, fora da grade de cards */
+section[id="reflexao"] {
+    margin-top: 24px;
+}
+
+blockquote {
+    border-left: 4px solid var(--laranja);
+    padding: 10px 16px;
+    margin: 10px 0;
+    background-color: rgba(255, 140, 66, 0.08);
+}

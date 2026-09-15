@@ -1,0 +1,21 @@
+
+/* Galeria com as duas imagens dos Alpes lado a lado, com espaçamento
+   de propósito entre elas (margin/padding) */
+.galeria-alpes figure {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 16px;
+}
+
+.galeria-alpes img {
+    width: 350px;
+    margin: 0;
+}
+
+/* Bandeiras dos idiomas, um pouco separadas do título */
+h2 img {
+    margin-left: 10px;
+    vertical-align: middle;
+    border-radius: 4px;
+}

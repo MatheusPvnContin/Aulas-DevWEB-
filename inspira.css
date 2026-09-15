@@ -1,0 +1,20 @@
+
+/* Citações com barra lateral ciano, destacando-as do restante do texto */
+blockquote {
+    border-left: 4px solid var(--ciano);
+    margin: 16px 0;
+    padding: 8px 16px;
+    background-color: var(--azul-medio);
+    border-radius: 0 8px 8px 0;
+}
+
+main figure img {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    width: 260px;
+}
+
+main p {
+    overflow: hidden;
+}
