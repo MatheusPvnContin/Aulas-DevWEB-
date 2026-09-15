@@ -8,6 +8,68 @@
     <title>Praticando 5 - Opacidades</title>
 
 </head>
+    <style>
+        body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #87ceeb;
+}
+
+h1 {
+    padding: 15px 20px;
+    margin: 0;
+}
+
+.bloco {
+    background-color: #d9d9d9;
+    border: 1px solid #333;
+    margin: 15px;
+    padding: 15px;
+}
+
+/* --- 1. Efeito de foco transparente --- */
+.galeria img {
+    width: 200px;
+    margin-right: 8px;
+    opacity: 0.5;                 /* reduzida por padrão */
+    transition: opacity 0.2s ease;
+}
+
+.galeria img:hover,
+.galeria img:focus {
+    opacity: 1;                   /* opacidade total no hover/foco */
+    outline: 4px solid #1565c0;   /* destaque da imagem em foco */
+}
+
+/* --- 2. opacity nas caixas (afeta o conteúdo inteiro, inclusive o texto) --- */
+.caixa {
+    background-color: green;
+    color: #000;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 2px;
+}
+
+.op-100 { opacity: 1; }
+.op-80 { opacity: 0.8; }
+.op-60 { opacity: 0.6; }
+.op-40 { opacity: 0.4; }
+.op-20 { opacity: 0.2; }
+
+/* --- 3. rgba no background-color (só o fundo fica transparente, o texto continua 100% legível) --- */
+.caixa-rgba {
+    color: #000;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 2px;
+}
+
+.rgba-80 { background-color: rgba(0, 128, 0, 0.8); }
+.rgba-60 { background-color: rgba(0, 128, 0, 0.6); }
+.rgba-40 { background-color: rgba(0, 128, 0, 0.4); }
+.rgba-20 { background-color: rgba(0, 128, 0, 0.2); }
+    </style>
 
 <body>
     <!--
@@ -33,26 +95,32 @@
     -->
     <h1>Praticando 5 - Opacidades</h1>
 
-    Exemplo de uso de opacidade para fazer um efeito de foco transparente
-    imagens/img_forest.jpg
-    imagens/img_mountains.jpg
-    imagens/img_5terre.jpg
+    <section class="bloco foco">
+        <p>Exemplo de uso de opacidade para fazer um efeito de foco transparente</p>
+        <div class="galeria">
+            <img src="imagens/img_forest.jpg" alt="Floresta">
+            <img src="imagens/img_mountains.jpg" alt="Montanhas">
+            <img src="imagens/img_5terre.jpg" alt="Cinque Terre">
+        </div>
+    </section>
 
-    Exemplo de uso de opacidade para tornar as caixas transparentes usando a propriedade opacity
+    <section class="bloco">
+        <p>Exemplo de uso de opacidade para tornar as caixas transparentes usando a propriedade <em>opacity</em></p>
+        <div class="caixa op-100">Opacidade 1.0 (valor padrão, nenhuma opacidade)</div>
+        <div class="caixa op-80">Opacidade 0.8</div>
+        <div class="caixa op-60">Opacidade 0.6</div>
+        <div class="caixa op-40">Opacidade 0.4</div>
+        <div class="caixa op-20">Opacidade 0.2</div>
+    </section>
 
-    Opacidade 1.0 (valor padrão, nenhuma opacidade)
-    Opacidade 0.8
-    Opacidade 0.6
-    Opacidade 0.4
-    Opacidade 0.2
-
-    Exemplo de uso de opacidade para tornar as caixas transparentes usando a propriedade background-color com valor em
-    rgba
-
-    RGBA 0.8
-    RGBA 0.6
-    RGBA 0.4
-    RGBA 0.2
+    <section class="bloco">
+        <p>Exemplo de uso de opacidade para tornar as caixas transparentes usando a propriedade
+            <em>background-color</em> com valor em <em>rgba</em></p>
+        <div class="caixa-rgba rgba-80">RGBA 0.8</div>
+        <div class="caixa-rgba rgba-60">RGBA 0.6</div>
+        <div class="caixa-rgba rgba-40">RGBA 0.4</div>
+        <div class="caixa-rgba rgba-20">RGBA 0.2</div>
+    </section>
+    
 </body>
-
 </html>

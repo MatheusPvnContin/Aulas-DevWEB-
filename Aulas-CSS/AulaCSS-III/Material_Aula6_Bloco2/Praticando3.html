@@ -7,6 +7,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Praticando 3 - Planos de fundos com cores e com imagens</title>
 
+    <style>
+        body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+
+    background-color: #ade8f4;          /* cor de fundo do corpo */
+    background-image: url("imagens/gato.png");
+    background-repeat: no-repeat;       /* a imagem NÃO se repete aqui */
+    background-position: bottom right;  /* fica só num canto, como detalhe */
+    background-size: 320px auto;        /* não cobre a tela toda */
+}
+
+h1 {
+    padding: 15px 20px;
+    margin: 0;
+}
+
+.secao1 {
+    background-color: #e57373;
+}
+
+
+.secao2 {
+    background-color: #333333;
+    background-image: url("imagens/gato.png");
+    background-repeat: repeat;      
+    background-size: 50px 50px;     
+    color: #ffd54f;                
+}
+
+
+.secao3 {
+    background-color: rgba(129, 199, 132, 0.55);
+}
+    </style>    
 </head>
 
 <body>
@@ -30,31 +66,35 @@
         Imagem disponível: imagens/gato.png
     -->
 
-    <h1>Praticando 3 - Planos de fundos com cores e com imagens</h1>
+    <h1 >Praticando 3 - Planos de fundos com cores e com imagens</h1>
 
-    <h2>Seção 1</h2>
-    <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, culpa assumenda. Maiores, ullam? Praesentium
-        repudiandae minus deserunt aspernatur maxime sunt? Soluta cum voluptates natus ad nisi sapiente dolor
-        necessitatibus fugiat! At, culpa assumenda. Maiores, ullam? Praesentium
-        repudiandae minus deserunt aspernatur maxime sunt?
-    </p>
-
-    <h2>Seção 2</h2>
-    <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, culpa assumenda. Maiores, ullam? Praesentium
-        repudiandae minus deserunt aspernatur maxime sunt? Soluta cum voluptates natus ad nisi sapiente dolor
-        necessitatibus fugiat! At, culpa assumenda. Maiores, ullam? Praesentium
-        repudiandae minus deserunt aspernatur maxime sunt?
-    </p>
-    </div>
-    <h2>Seção 3</h2>
-    <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, culpa assumenda. Maiores, ullam? Praesentium
-        repudiandae minus deserunt aspernatur maxime sunt? Soluta cum voluptates natus ad nisi sapiente dolor
-        necessitatibus fugiat! At, culpa assumenda. Maiores, ullam? Praesentium
-        repudiandae minus deserunt aspernatur maxime sunt?
-    </p>
+    <section class = "secao1">
+        <h2>Seção 1</h2>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, culpa assumenda. Maiores, ullam? Praesentium
+            repudiandae minus deserunt aspernatur maxime sunt? Soluta cum voluptates natus ad nisi sapiente dolor
+            necessitatibus fugiat! At, culpa assumenda. Maiores, ullam? Praesentium
+            repudiandae minus deserunt aspernatur maxime sunt?
+        </p>
+    </section>
+    <section class = "secao2">
+        <h2>Seção 2</h2>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, culpa assumenda. Maiores, ullam? Praesentium
+            repudiandae minus deserunt aspernatur maxime sunt? Soluta cum voluptates natus ad nisi sapiente dolor
+            necessitatibus fugiat! At, culpa assumenda. Maiores, ullam? Praesentium
+            repudiandae minus deserunt aspernatur maxime sunt?
+        </p>
+    </section>
+    <section class = "secao3">
+        <h2>Seção 3</h2>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, culpa assumenda. Maiores, ullam? Praesentium
+            repudiandae minus deserunt aspernatur maxime sunt? Soluta cum voluptates natus ad nisi sapiente dolor
+            necessitatibus fugiat! At, culpa assumenda. Maiores, ullam? Praesentium
+            repudiandae minus deserunt aspernatur maxime sunt?
+        </p>
+    </section>
 </body>
 
 </html>

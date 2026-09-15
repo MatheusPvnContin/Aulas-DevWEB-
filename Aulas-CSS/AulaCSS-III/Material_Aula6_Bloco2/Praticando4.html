@@ -7,6 +7,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Praticando 4 - Tabela de cores e Imagens como plano de fundo</title>
 </head>
+    <Style>
+        body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+
+    /* Duas imagens de fundo no body ao mesmo tempo (sem usar <img>):
+       1) logo do IFSP, aparece uma única vez, no canto superior direito
+       2) paleta de cores, repetida na horizontal, na base da página */
+    background-image:
+        url("imagens/Marca_IFSP_2015031.png"),
+        url("imagens/1330892.png");
+
+    background-repeat:
+        no-repeat,
+        repeat-x;
+
+    background-position:
+        top right,
+        bottom left;
+
+    background-size:
+        160px auto,
+        auto 110px;
+}
+
+table,
+        th,
+        td {
+            border: 2px solid black;
+        }
+
+caption {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+th,
+td {
+    padding: 6px 10px;
+    width: 200px;
+}
+
+.cor-red { background-color: red; }
+.cor-b30000 { background-color: #b30000; }
+.cor-660000 { background-color: #660000; }
+.cor-green { background-color: green; }
+.cor-99ff99 { background-color: #99ff99; }
+.cor-004d00 { background-color: #004d00; }
+.cor-blue { background-color: blue; }
+.cor-ccccff { background-color: #ccccff; }
+.cor-000066 { background-color: #000066; }
+    </style>
+
+
 
 <body>
     <!--
@@ -40,40 +96,40 @@
         </thead>
         <tbody>
             <tr>
-                <td>red</td>
-                <td> - - - - - - - - - - - - - - - - - - - - </td>
+                <td >red class</td>
+                <td class = "cor-red"> - - - - - - - - - - - - - - - - - - - - </td>
             </tr>
             <tr>
-                <td>#b30000</td>
-                <td> - - - - - - - - - - - - - - - - - - - - </td>
+                <td >#b30000</td>
+                <td class = "cor-b30000"> - - - - - - - - - - - - - - - - - - - - </td>
             </tr>
             <tr>
-                <td>#660000</td>
-                <td> - - - - - - - - - - - - - - - - - - - - </td>
+                <td >#660000</td>
+                <td class = "cor-660000"> - - - - - - - - - - - - - - - - - - - - </td>
             </tr>
             <tr>
-                <td>green</td>
-                <td> - - - - - - - - - - - - - - - - - - - - </td>
+                <td >green</td>
+                <td class = "cor-green"> - - - - - - - - - - - - - - - - - - - - </td>
             </tr>
             <tr>
-                <td>#99ff99</td>
-                <td> - - - - - - - - - - - - - - - - - - - - </td>
+                <td >#99ff99</td>
+                <td class = "cor-99ff99"> - - - - - - - - - - - - - - - - - - - - </td>
             </tr>
             <tr>
-                <td>#004d00</td>
-                <td> - - - - - - - - - - - - - - - - - - - - </td>
+                <td >#004d00</td>
+                <td class = "cor-004d00"> - - - - - - - - - - - - - - - - - - - - </td>
             </tr>
             <tr>
-                <td>blue</td>
-                <td> - - - - - - - - - - - - - - - - - - - - </td>
+                <td >blue</td>
+                <td class = "cor-blue"> - - - - - - - - - - - - - - - - - - - - </td>
             </tr>
             <tr>
-                <td>#ccccff</td>
-                <td> - - - - - - - - - - - - - - - - - - - - </td>
+                <td >#ccccff</td>
+                <td class = "cor-ccccff"> - - - - - - - - - - - - - - - - - - - - </td>
             </tr>
             <tr>
-                <td>#000066</td>
-                <td> - - - - - - - - - - - - - - - - - - - - </td>
+                <td >#000066</td>
+                <td class = "cor-000066"> - - - - - - - - - - - - - - - - - - - - </td>
             </tr>
         </tbody>
     </table>
