@@ -28,21 +28,19 @@ h1 {
     padding: 15px;
 }
 
-/* --- 1. Efeito de foco transparente --- */
+
 .galeria img {
     width: 200px;
     margin-right: 8px;
-    opacity: 0.5;                 /* reduzida por padrão */
+    opacity: 0.5;                 
     transition: opacity 0.2s ease;
 }
 
-.galeria img:hover,
-.galeria img:focus {
-    opacity: 1;                   /* opacidade total no hover/foco */
-    outline: 4px solid #1565c0;   /* destaque da imagem em foco */
+.galeria img:hover{
+    opacity: 1;                   
+    outline: 4px solid #1565c0;  
 }
 
-/* --- 2. opacity nas caixas (afeta o conteúdo inteiro, inclusive o texto) --- */
 .caixa {
     background-color: green;
     color: #000;
@@ -57,7 +55,6 @@ h1 {
 .op-40 { opacity: 0.4; }
 .op-20 { opacity: 0.2; }
 
-/* --- 3. rgba no background-color (só o fundo fica transparente, o texto continua 100% legível) --- */
 .caixa-rgba {
     color: #000;
     font-weight: bold;
