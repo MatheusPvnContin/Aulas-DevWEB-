@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando 3 - Float</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            background-color: darkkhaki;
+            margin: 3vh 6vw;
+            line-height: 1.5;
+        }
+
+        h1 {
+            font-family: 'Emilys Candy', cursive;
+            font-size: 2rem;
+            margin-top: 0;
+        }
+
+      
+        p {
+            text-align: justify;
+            margin: 0 0 1.2em 0;
+        }
+
+        
+        .paragrafo-livre {
+            clear: both;
+        }
+
+        
+        .float-direita,
+        .float-esquerda {
+            width: 24%;
+            height: auto;
+            border-radius: 0.4em;
+        }
+
+        .float-direita {
+            float: right;
+            margin: 0 0 1em 1.5em;
+            
+        }
+
+        .float-esquerda {
+            float: left;
+            margin: 0 1.5em 1em 0;
+           
+        }
+    </style>
+</head>
+
+<body>
+    <!--
+        PRATICANDO 3 - Foco no uso da propriedade float
+        ========================================================
+        - 7 parágrafos de texto e 3 imagens.
+        - As imagens flutuam ao lado dos textos: 1 imagem à esquerda
+          e 2 imagens à direita.
+        - Texto justificado.
+        - Margens no documento e nas imagens em relação ao texto.
+        - Há 1 parágrafo (o 5º) que NÃO flutua ao lado de nenhuma
+          imagem — ele usa "clear: both" para ficar sempre abaixo
+          das duas imagens anteriores, ocupando a largura toda.
+    -->
+    <h1>Praticando 3 - Float</h1>
+
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum labore voluptas hic
+        voluptatibus ea, aliquid ratione sunt expedita dolorem odit enim temporibus est magni
+        inventore, eveniet tempora tenetur, possimus reprehenderit. Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Explicabo aperiam non culpa, suscipit consequuntur distinctio
+        vel atque ipsa soluta omnis blanditiis reiciendis expedita magnam? Amet ipsam aperiam minima
+        dolores laboriosam.
+    </p>
+
+    <img class="float-direita" src="https://www.zoosantoinacio.com/wp-content/uploads/2020/02/file_00000000aa2472439934271611a631d2.png"
+        alt="Panda vermelho">
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos consequatur error incidunt
+        eveniet hic molestias eaque facilis voluptate voluptatem architecto quo asperiores nobis,
+        magnam provident id animi reiciendis necessitatibus? Ipsa. Lorem, ipsum dolor sit amet
+        consectetur adipisicing elit. Iusto voluptatibus amet, non voluptatem, quas minus recusandae
+        quisquam dignissimos veniam neque velit suscipit ad delectus asperiores, pariatur similique
+        temporibus nemo? Alias?
+    </p>
+
+    <img class="float-esquerda" src="https://www.zoosantoinacio.com/wp-content/uploads/2020/02/file_00000000aa2472439934271611a631d2.png"
+        alt="Panda vermelha">
+
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum labore voluptas hic
+        voluptatibus ea, aliquid ratione sunt expedita dolorem odit enim temporibus est magni
+        inventore, eveniet tempora tenetur, possimus reprehenderit. Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Explicabo aperiam non culpa, suscipit consequuntur distinctio
+        vel atque ipsa soluta omnis blanditiis reiciendis expedita magnam? Amet ipsam aperiam minima
+        dolores laboriosam.
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos consequatur error incidunt
+        eveniet hic molestias eaque facilis voluptate voluptatem architecto quo asperiores nobis,
+        magnam provident id animi reiciendis necessitatibus? Ipsa. Lorem, ipsum dolor sit amet
+        consectetur adipisicing elit.
+    </p>
+
+    <p class="paragrafo-livre">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum labore voluptas hic
+        voluptatibus ea, aliquid ratione sunt expedita dolorem odit enim temporibus est magni
+        inventore, eveniet tempora tenetur, possimus reprehenderit. Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Explicabo aperiam non culpa, suscipit consequuntur distinctio
+        vel atque ipsa soluta omnis blanditiis reiciendis expedita magnam? Amet ipsam aperiam minima
+        dolores laboriosam.
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos consequatur error incidunt
+        eveniet hic molestias eaque facilis voluptate voluptatem architecto quo asperiores nobis,
+        magnam provident id animi reiciendis necessitatibus? Ipsa. Lorem, ipsum dolor sit amet
+        consectetur adipisicing elit. Iusto voluptatibus amet, non voluptatem, quas minus recusandae
+        quisquam dignissimos veniam neque velit suscipit ad delectus asperiores, pariatur similique
+        temporibus nemo? Alias?
+    </p>
+
+    <img class="float-direita" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMe_jT4RVMnnoRy1ddGRKdL1BvBmYrwGY6-BRrEwyZSFivhFGnGNh1joWh&s=10"
+        alt="Panda vermelho">
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum labore voluptas hic
+        voluptatibus ea, aliquid ratione sunt expedita dolorem odit enim temporibus est magni
+        inventore, eveniet tempora tenetur, possimus reprehenderit. Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Explicabo aperiam non culpa, suscipit consequuntur distinctio
+        vel atque ipsa soluta omnis blanditiis reiciendis expedita magnam? Amet ipsam aperiam minima
+        dolores laboriosam.
+    </p>
+</body>
+
+</html>
