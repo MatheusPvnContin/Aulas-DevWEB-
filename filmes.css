@@ -30,7 +30,7 @@ section[id="reflexao"] {
 }
 
 .poster img {
-    width: 90%;
+    width: 90%;     
     height: 90%;
     object-fit: cover;
     border: 2px solid var(--ciano);
