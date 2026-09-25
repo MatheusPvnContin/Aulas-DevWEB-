@@ -19,14 +19,25 @@
         .caixa {
             background-color: green;
             margin: 1rem;
+            
         }
 
         
+        .linha {
+            display: flex;
+        }
+
+        
+        .linha-pequenas {
+            justify-content: flex-end;
+        }
+
         .pequena {
             width: 8rem;
             height: 8rem;
         }
 
+        
         .larga {
             width: 24rem;
             height: 8rem;
@@ -38,56 +49,43 @@
             height: 24rem;
         }
 
-       
-        .flutua-direita {
-            float: right;
-        }
-
-        .flutua-esquerda {
-            float: left;
-        }
-
         
-        .lado-a-lado {
-            clear: both;
-            
-            display: inline-block;
-            vertical-align: top;
+        .linha-altas {
+            justify-content: space-between;
         }
 
-        
-        .primeira-alta {
-            clear: both;
+        .grupo-direita {
+            display: flex;
         }
     </style>
 </head>
 
 <body>
-    <!--
-        PRATICANDO 4 - Caixas verdes
-        ========================================================
-        - 8 caixas com altura e largura definidas.
-        - Margens externas em todas.
-        - Posicionamento horizontal em algumas (aqui: display: inline-block,
-          sem usar float, para ficarem lado a lado alinhadas à esquerda).
-        - Flutuação (float) em algumas outras.
-    -->
+
     <h1>Praticando 4 - Caixas verdes</h1>
 
-    
-    <div class="caixa pequena flutua-direita"></div>
-    <div class="caixa pequena flutua-direita"></div>
-    <div class="caixa pequena flutua-direita"></div>
+   
+    <div class="linha linha-pequenas">
+        <div class="caixa pequena"></div>
+        <div class="caixa pequena"></div>
+        <div class="caixa pequena"></div>
+    </div>
 
-    
-    <div class="caixa larga lado-a-lado"></div>
-    <div class="caixa larga lado-a-lado"></div>
+   
+    <div class="linha linha-largas">
+        <div class="caixa larga"></div>
+        <div class="caixa larga"></div>
+    </div>
 
-    <div class="caixa alta flutua-esquerda primeira-alta"></div>
+   
+    <div class="linha linha-altas">
+        <div class="caixa alta"></div>
 
-    
-    <div class="caixa alta flutua-direita"></div>
-    <div class="caixa alta flutua-direita"></div>
+        <div class="grupo-direita">
+            <div class="caixa alta"></div>
+            <div class="caixa alta"></div>
+        </div>
+    </div>
 </body>
 
 </html>
