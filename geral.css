@@ -64,9 +64,7 @@ header p {
     color: var(--texto-claro);
 }
 
-/* --------------------------------------------------------------------
-   Menu de navegação (presente nas 5 páginas)
-   -------------------------------------------------------------------- */
+
 nav {
     background-color: var(--azul-medio);
     padding: 12px 20px;
@@ -76,15 +74,24 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;   /* MOBILE-FIRST */
     gap: 10px;
     padding: 0;
     margin: 8px 0 0 0;
 }
 
-/* Seletor de CLASSE: aplicado a cada item de link do menu */
+/* A partir daqui a tela é "grande o suficiente": o menu deixa de
+   empilhar e passa a ficar em linha, lado a lado */
+@media (min-width: 750px) {
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
 nav ul li a {
-    display: inline-block;
+    display: block;           /* MOBILE: ocupa a linha toda, mais fácil de tocar */
+    text-align: center;
     padding: 8px 14px;
     border-radius: 6px;
     color: var(--texto-claro);
@@ -92,7 +99,13 @@ nav ul li a {
     border: 1px solid var(--ciano);
 }
 
-/* :hover funcional do menu — muda fundo e cor do texto */
+@media (min-width: 750px) {
+    nav ul li a {
+        display: inline-block;   /* DESKTOP */
+    }
+}
+
+
 nav ul li a:hover {
     background-color: var(--laranja);
     color: var(--azul-escuro);
