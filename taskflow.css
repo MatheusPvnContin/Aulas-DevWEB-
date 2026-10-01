@@ -1,0 +1,265 @@
+#hero,
+#beneficios,
+#sobre,
+#depoimentos,
+#precos,
+#faq {
+    scroll-margin-top: 10px;
+}
+
+.botao-cta {                    /*BOTÃO: Call to Action */
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    padding: 16px 24px;
+    background-color: var(--laranja);
+    color: var(--azul-escuro);
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    border: 2px solid var(--laranja);
+    border-radius: 30px;
+    /* botão em formato de "pílula" */
+}
+
+.botao-cta:hover {
+    background-color: transparent;
+    color: var(--laranja);
+    text-decoration: none;
+}
+
+@media (min-width: 700px) {
+    .botao-cta {
+        display: inline-block;
+        /* no desktop não precisa ocupar a linha toda */
+    }
+}
+
+/* Mobile: texto centralizado, depois imagem (empilhados).
+   Desktop: texto alinhado à esquerda numa coluna, imagem na outra. */
+#hero {
+    background-color: var(--azul-medio);
+    border-radius: 12px;
+    padding: 24px 20px;
+    text-align: center;
+}
+
+#hero img {
+    display: block;
+    max-width: 280px;
+    margin: 20px auto 0 auto;
+    border: 2px solid var(--ciano);
+}
+
+@media (min-width: 700px) {
+    .hero-principal {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        text-align: left;
+    }
+
+    .hero-texto {
+        flex: 1 1 55%;
+    }
+
+    .hero-texto h2 {
+        font-size: 2.2rem;
+        line-height: 1.25;
+    }
+
+    #hero img {
+        flex: 1 1 40%;
+        max-width: 100%;
+        margin: 0;
+    }
+}
+
+/* Selos de confiança: conteúdo que SÓ existe no desktop */
+.selos-confianca {
+    display: none;
+}
+
+@media (min-width: 700px) {
+    .selos-confianca {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .selos-confianca p {
+        background-color: var(--azul-medio);
+        border-radius: 8px;
+        padding: 10px;
+        margin: 0;
+        flex: 1;
+    }
+}
+
+/* Mobile: lista normal, 1 item por linha.
+   Desktop: vira um grid de 2 colunas. */
+#beneficios ul {
+    list-style: none;
+    padding: 0;
+}
+
+#beneficios li {
+    background-color: var(--azul-medio);
+    border-radius: 8px;
+    padding: 14px;
+    margin-bottom: 12px;
+}
+
+@media (min-width: 700px) {
+    #beneficios ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    #beneficios li {
+        margin-bottom: 0;
+    }
+}
+
+/* SEÇÃO 3 — Sobre o produto
+   Mobile: texto, depois imagem, empilhados.
+   Desktop: texto e imagem lado a lado. */
+
+#sobre img {
+    display: block;
+    margin: 16px auto 0 auto;
+}
+
+@media (min-width: 700px) {
+    .sobre-colunas {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .sobre-texto {
+        flex: 1 1 60%;
+    }
+
+    #sobre img {
+        flex: 1 1 35%;
+        margin: 0;
+    }
+}
+
+/* Mobile: um depoimento embaixo do outro.
+   Desktop: grid de 2 colunas lado a lado. */
+
+blockquote {
+    background-color: var(--azul-medio);
+    border-left: 4px solid var(--ciano);
+    border-radius: 0 8px 8px 0;
+    padding: 12px 16px;
+    margin: 0 0 16px 0;
+}
+
+@media (min-width: 700px) {
+    .depoimentos-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    blockquote {
+        margin-bottom: 0;
+    }
+}
+
+
+
+#precos {
+    background-color: var(--azul-medio);
+    border: 3px solid var(--laranja);
+    border-radius: 14px;
+    padding: 28px 20px;
+    text-align: center;
+}
+
+
+.selo-oferta {
+    display: inline-block;
+    background-color: var(--laranja);
+    color: var(--azul-escuro);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    padding: 6px 14px;
+    border-radius: 20px;
+    margin: 0 0 12px 0;
+}
+
+.preco-valor {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--laranja);
+    margin: 10px 0 0 0;
+    line-height: 1;
+}
+
+.preco-centavos {
+    font-size: 1.6rem;
+}
+
+.preco-detalhe {
+    margin: 6px 0 20px 0;
+    color: var(--texto-claro);
+}
+
+@media (min-width: 700px) {
+    #precos {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .preco-valor {
+        font-size: 4rem;
+    }
+}
+
+#faq h3 {
+    color: var(--texto-claro);
+    margin-bottom: 4px;
+}
+
+#faq p {
+    margin-top: 0;
+}
+
+/* Barra fixa de compra: SÓ no mobile */
+.barra-fixa-mobile {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 93%;
+    background-color: var(--azul-escuro);
+    border-top: 2px solid var(--ciano);
+    padding: 10px 16px;
+}
+
+.barra-fixa-mobile .botao-cta {
+    margin: 0;
+}
+
+body {
+    padding-bottom: 70px;
+}
+
+@media (min-width: 700px) {
+    .barra-fixa-mobile {
+        display: none;
+    }
+
+    body {
+        padding-bottom: 0;
+    }
+}
