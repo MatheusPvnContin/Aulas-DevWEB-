@@ -52,11 +52,12 @@ header {
     padding: 8px 15px;
     border-radius: 4px;
     transition: 0.2s;
+    border: 2px solid white;
 }
 
 .link-pedido:hover {
-    background-color: #2f7d6d;
-    color: #fff;
+    background-color: white;
+    color: #000000;
 }
 
 
@@ -68,6 +69,7 @@ nav {
     display: flex;
     gap: 30px;
     border-bottom: 3px solid #2f7d6d; 
+    justify-content: space-between;
 }
 
 nav a {
@@ -100,7 +102,7 @@ main h2 {
 
 .cards-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 20px;
 }
 
@@ -128,6 +130,7 @@ main h2 {
 .card.destaque {
     background-color: #e3f1ec;
     border: 2px solid #2f7d6d;
+    grid-column: span 2;
 }
 
 .card.destaque:hover {
@@ -168,10 +171,7 @@ aside p, aside li {
 }
 
 aside ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
+   padding-left: 20px;
 }
 
 
