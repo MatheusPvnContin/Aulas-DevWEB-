@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Praticando 2 - Mini Calculadora</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="estiloPraticando2.css">
+</head>
+<body class="container mt-5">
+
+    <h1 class="mb-4">Praticando 2 - JavaScript - Mini calculadora</h1>
+
+
+    <div class="row g-3 mb-4">
+        <div class="col-md-4">
+            <label for="num1" class="form-label">Número 1</label>
+            <input type="number" id="num1" class="form-control">
+        </div>
+        <div class="col-md-4">
+            <label for="num2" class="form-label">Número 2</label>
+            <input type="number" id="num2" class="form-control">
+        </div>
+        <div class="col-md-4">
+            <label for="resultado" class="form-label">Resultado</label>
+            <input type="text" id="resultado" class="form-control" readonly>
+        </div>
+    </div>
+
+   
+    <div class="calculadora-grid mb-3">
+        <button id="btnSoma" class="btn btn-primary btn-lg">Soma (+)</button>
+        <button id="btnSubtracao" class="btn btn-secondary btn-lg">Subtração (-)</button>
+        <button id="btnMultiplicacao" class="btn btn-success btn-lg">Multiplicação (×)</button>
+        <button id="btnDivisao" class="btn btn-danger btn-lg">Divisão (÷)</button>
+    </div>
+
+  
+    <div>
+        <button id="btnLimpar" class="btn btn-warning">Limpar Campos</button>
+    </div>
+
+    <script src="Prat2-Aula14.js"></script>
+</body>
+</html>
