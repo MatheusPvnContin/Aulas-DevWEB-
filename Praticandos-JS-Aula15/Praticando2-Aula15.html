@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 15 - Praticando 2</title>
+
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: left;
+        }
+
+        .texto-centralizado {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        
+        #lampada {
+            display: block;
+            margin: 0 auto 20px auto;
+            cursor: pointer;
+            width: 300px;
+        }
+
+    </style>
+</head>
+<body id="corpo">
+
+    <h1>Praticando 2 - Lâmpada</h1>
+
+
+    <div class="texto-centralizado">
+        <!-- Imagem inicial -->
+        <img id="lampada" src="Material de Aula 15c/lampada.png" alt="Lâmpada">
+        <h2 id="status">Lâmpada apagada</h2>
+    </div>
+
+    <script>
+      
+        const lampada = document.getElementById("lampada");
+        const statusTexto = document.getElementById("status");
+        const corpo = document.getElementById("corpo");
+
+        //Mouseover: Evento quando o mouse passa por cima da lâmpada
+        lampada.addEventListener("mouseover", function () {
+            lampada.src = "Material de Aula 15c/lampada-acesa.png";// Troca a imagem
+            document.body.style.backgroundColor = "white"; // Troca a cor de fundo 
+            document.body.style.color = "black"; // Troca a cor do texto 
+            statusTexto.innerText = "Lâmpada acesa";
+        });
+
+        //Mouseout: Evento quando o mouse sai de cima da lâmpada
+        lampada.addEventListener("mouseout", function () {
+            lampada.src = "Material de Aula 15c/lampada.png"; // Volta a imagem original
+            document.body.style.backgroundColor = "black"; // Volta o fundo para preto
+            document.body.style.color = "white";            // Volta o texto para branco
+            statusTexto.innerText = "Lâmpada apagada";
+        });
+    </script>
+
+</body>
+</html>
