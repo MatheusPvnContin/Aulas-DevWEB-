@@ -89,10 +89,7 @@
         return;
       }
 
-      // não buscar duas vezes o mesmo CEP
-      if (cep === ultimoCep && !forcar) {
-        return;
-      }
+      
       ultimoCep = cep;
 
       const minhaBusca = ++numeroBusca;
